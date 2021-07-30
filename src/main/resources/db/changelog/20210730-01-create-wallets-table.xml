@@ -1,0 +1,15 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="karan" id="24060452">
+        <createTable tableName="wallets">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="balance" type="INT8"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
